@@ -11,3 +11,17 @@
     return userArray;
 }
 
+void PrintArray(string message, string[] arrayTwoPrint)
+{
+    Console.Write(message);
+    Console.Write("[");
+    for (int i = 0; i < arrayTwoPrint.Length; i++)
+    {
+        Console.Write(arrayTwoPrint[i]);
+        if (i < arrayTwoPrint.Length - 1)
+        {
+            Console.Write(",");
+        }
+    }
+    Console.WriteLine("]");
+}
