@@ -25,3 +25,26 @@ void PrintArray(string message, string[] arrayTwoPrint)
     }
     Console.WriteLine("]");
 }
+
+string[] ChangerOfArray(string[] sourceArray)
+{
+    int count = 0;
+    for (int i = 0; i < sourceArray.Length; i++)
+    {
+        if (sourceArray[i].Length <= 3)
+        {
+            count++;
+        }
+    }
+    string[] NewArray = new string[count];
+    int indexOfNewArray = 0;
+    for (int i = 0; i < sourceArray.Length; i++)
+    {
+        if (sourceArray[i].Length <= 3)
+        {
+            NewArray[indexOfNewArray]=sourceArray[i];
+            indexOfNewArray++;
+        }
+    }
+    return NewArray;
+}
