@@ -48,3 +48,8 @@ string[] ChangerOfArray(string[] sourceArray)
     }
     return NewArray;
 }
+
+string[] userArray = GenerateUserArray("Задайте длину массива: ");
+PrintArray("Ваш массив: ", userArray);
+string[] result = ChangerOfArray(userArray);
+PrintArray("Итог работы программы: ", result);
